@@ -36,7 +36,7 @@ Columns: BRIDGE, VLAN-IDS, CURRENT-TAGGED, CURRENT-UNTAGGED
 ## Build & pack container
 ```
 docker buildx build --no-cache --platform linux/arm/v6 -t mdns .
-docker save mdns > mdns.tar
+docker save mdns -o mdns.tar
 8.8M mdns.tar # size after pack
 ```
 
