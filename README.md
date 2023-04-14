@@ -1,5 +1,5 @@
 # docker-mdns-repeater-mikrotik
-An mDNS repeater that can ran as a container on Mikrotik routers.
+An mDNS repeater that can run as a container on Mikrotik routers.
 
 Based on:
 * [geekman/mdns-repeater](https://github.com/geekman/mdns-repeater)
@@ -12,7 +12,7 @@ Images availabe on Dockerhub at [mag1024/mikrotik-docker-mdns-repeater](https://
 As of Oct 2022, the Mikrotik container implementation is limited to exactly one
 network interface. There is no option for an equivalent of 'host' mode
 networking, and the interface must be of type veth, so we have to get creative
-to get a functional repeater. The key is to attach the venth to a trunk bridge
+to get a functional repeater. The key is to attach the veth to a trunk bridge
 that contains multiple vlans corresponding to the networks we want to repeat
 across, and then create interfaces for each of the vlans inside the container,
 using the veth as the parent. The set of vlans/interfaces to use is specified
