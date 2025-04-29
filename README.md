@@ -1,3 +1,8 @@
+# DEPRECATED
+As of RouterOS 7.16, Mikrotik now has a [built-in mDNS repeater](https://help.mikrotik.com/docs/spaces/ROS/pages/37748767/DNS#DNS-mDNS) implementation: e.g.
+`/ip/dns/set mdns-repeat-ifaces=bridge,vlan-iot`
+
+
 # docker-mdns-repeater-mikrotik
 mdns-repeater in mikrotik container
 
